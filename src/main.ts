@@ -51,6 +51,9 @@ export default async function (): Promise<void> {
                   (item: TAnyTranscriptItem) =>
                     item.type == "text" || item.type == "request"
                 );
+                console.log(results);
+                console.log(transcriptItems)
+                
                 figma
                   .loadFontAsync({
                     family: "Open Sans",
